@@ -19,15 +19,15 @@
   <meta name="author" content="Yikai Peng and Junhao Zheng">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一章 量子力学基础 1.3 态矢量和力学算符的表象及表象变化 离散表象：能量表象、角动量表象 $$|\psi\rangle&#x3D;\sum_{n}|\psi_{n}\rangle\langle\psi_{n}|\psi\rangle&#x3D;\sum_{n}c_{n}|\psi_{n}\rangle $$ 其中$|\psi_{n}\rangle$是基矢，$c_{n}&#x3D;\langle\psi_{n}|\psi\">
+    <meta name="description" content="第一章 量子力学基础 1.3 态矢量和力学算符的表象及表象变化 离散表象：能量表象、角动量表象 |ψ⟩ &#x3D; ∑n|ψn⟩⟨ψn|ψ⟩ &#x3D; ∑ncn|ψn⟩ 其中|ψn⟩是基矢，cn &#x3D; ⟨ψn|ψ⟩,态矢量$|\psi\rangle&#x3D;\begin{bmatrix}[c_{1}\\c_{2}\\c_{3}]\end{bmatrix}$,归一化条件：∑n|cn|2 &#x3D; 1 连续表象：坐标表象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="量子光学学习记录">
 <meta property="og:url" content="https://whyneednamee.github.io/pyk-zjh.github.io/2025/07/14/hello-world/index.html">
 <meta property="og:site_name" content="Some notes for wireless communication and physics">
-<meta property="og:description" content="第一章 量子力学基础 1.3 态矢量和力学算符的表象及表象变化 离散表象：能量表象、角动量表象 $$|\psi\rangle&#x3D;\sum_{n}|\psi_{n}\rangle\langle\psi_{n}|\psi\rangle&#x3D;\sum_{n}c_{n}|\psi_{n}\rangle $$ 其中$|\psi_{n}\rangle$是基矢，$c_{n}&#x3D;\langle\psi_{n}|\psi\">
+<meta property="og:description" content="第一章 量子力学基础 1.3 态矢量和力学算符的表象及表象变化 离散表象：能量表象、角动量表象 |ψ⟩ &#x3D; ∑n|ψn⟩⟨ψn|ψ⟩ &#x3D; ∑ncn|ψn⟩ 其中|ψn⟩是基矢，cn &#x3D; ⟨ψn|ψ⟩,态矢量$|\psi\rangle&#x3D;\begin{bmatrix}[c_{1}\\c_{2}\\c_{3}]\end{bmatrix}$,归一化条件：∑n|cn|2 &#x3D; 1 连续表象：坐标表象">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-07-13T17:12:02.190Z">
-<meta property="article:modified_time" content="2025-07-16T06:49:03.951Z">
+<meta property="article:modified_time" content="2025-07-16T08:26:33.378Z">
 <meta property="article:author" content="Yikai Peng and Junhao Zheng">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.6k 字
+          3.2k 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          31 分钟
+          28 分钟
         
       </span>
     
@@ -275,209 +275,309 @@
             
               <div class="markdown-body">
                 
-                <h1>第一章 量子力学基础</h1>
-<h2 id="1-3-态矢量和力学算符的表象及表象变化">1.3 态矢量和力学算符的表象及表象变化</h2>
-<p>离散表象：能量表象、角动量表象<br>
-$$|\psi\rangle=\sum_{n}|\psi_{n}\rangle\langle\psi_{n}|\psi\rangle=\sum_{n}c_{n}|\psi_{n}\rangle<br>
-$$<br>
-其中$|\psi_{n}\rangle$是基矢，$c_{n}=\langle\psi_{n}|\psi\rangle$,态矢量$|\psi\rangle=\begin{bmatrix}[c_{1}\c_{2}\c_{3}]\end{bmatrix}$,归一化条件：$\sum_{n} |c_{n}|^2=1$<br>
-连续表象：坐标表象、动量表象<br>
-$$|\psi\rangle=\int dx|x\rangle\langle x|\psi\rangle=\int dx|x\rangle\psi(x)$$<br>
-其中$\psi(x)=\langle x|\psi\rangle$即基态在x表象下的表示，也就是波函数，归一化条件：$\int dx|\psi(x)|^2=1$<br>
-算符在离散表象中表示为矩阵，在连续表象中表示为函数。<br>
-表象变换：<br>
-$$|\psi\rangle=\sum_{n}a_{n}|A_{n}\rangle=\sum_{m}b_{m}|B_{m}\rangle$$<br>
-$b_{m}=\sum_{n}S_{mn}a_{n}$其中$S_{mn}=\langle B_{m}|A_{n}\rangle$，$S=&lt;!–swig￼0–&gt;}$为幺正矩阵。<br>
-态矢：$\psi(B)=S\psi(A)$ 算符：$F(B)=SF(A)S^{\dagger}$<br>
-左右矢转置共轭</p>
-<h2 id="1-4-纯态、混合态、密度算符">1.4 纯态、混合态、密度算符</h2>
-<h3 id="1-4-1-算符">1.4.1 算符</h3>
-<p>纯态(pure state)：可以用态矢量$|\psi\rangle$表示；混合态(mix states)：以不同的概率$P_{\psi}$处于不同的纯态，用密度算符表示。<br>
-纯态对应的密度算符：$\rho_{\psi}=|\psi\rangle\langle\psi|$<br>
-混合态对应的密度算符：$\rho_{ms}=\sum_{\psi}P_{\psi}\rho_{\psi}$<br>
-平均值：纯态：$\langle A\rangle=\langle\psi|A|\psi\rangle=Tr(|\psi\rangle\langle\psi|A)=Tr(\rho A)$<br>
-混合态：$\langle A\rangle=Tr(\rho_{ms}A)=\sum_{\psi}P_{\psi}\langle A\rangle_{\psi}$，两重平均<br>
-<strong>矩阵的迹：矩阵对角线元素之和：</strong>$Tr(X)=\sum_{i=1}^{n}=x_{ii}$<br>
-<strong>混合态$\neq$叠加态形式的纯态</strong><br>
-混合态的密度算符只有<strong>对角项</strong>，而纯态的密度算符还出现<strong>非对角项</strong>。非对角项引起的干涉效应称为<strong>相干项</strong>。实际问题中，描述量子态的密度算符随时间衰减，其对角元的衰减伴随<strong>能量损耗</strong>，非对角元的衰减伴随相干性消退，即为<strong>消相干或退相干（decoherence）（ps:非对角项为0不代表相干项为0）</strong></p>
-<h3 id="1-4-2">1.4.2</h3>
-<p>eg:光子数态$|n\rangle$，其密度算符为$\rho_{n}=|n\rangle\langle n|$，$n$为光子数，相干态$|\alpha\rangle$的密度算符为$$\rho_{\alpha}=|\alpha\rangle\langle\alpha|$$<br>
-相干态在光子数态表象中的形式为：$$|\alpha\rangle=\sum_{n}c_{n}|n\rangle=\sum_{n}\sqrt{ P_{n} }e^{i\psi_{n}}|n\rangle$$<br>
-则$$\begin{align}<br>
-\rho_{\alpha}&amp;=\sum_{m,n}\sqrt{ P_{m}P_{n} }e^{i(\psi_{m}-\psi_{n})}|m\rangle \langle   n|\&amp;=\sum_{n}P_{n}|n   \rangle\langle n|+\sum_{m\neq n}\sqrt{ P_{m}P_{n} }e^{i(\psi_{m}-\psi_{n})}|m\rangle \langle   n|\&amp;=(对角项)+（非对角项）\end{align}$$</p>
-<h3 id="1-4-3-密度算符的运动方程">1.4.3 密度算符的运动方程</h3>
-<p>纯态：（态矢量的运动方程两边右乘$\langle \psi|$后推导而来）<br>
-$$i\hbar\frac{d}{dt}\rho=[H,\rho]=H\rho-\rho H$$</p>
-<h2 id="1-5-一维谐振子">1.5 一维谐振子</h2>
-<h3 id="1-5-1-本征态和本征能量">1.5.1 本征态和本征能量</h3>
-<p>哈密顿量：$H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2q^2$<br>
-引入变换：$$粒子湮灭算符a=\sqrt{ \frac{1}{2m\hbar\omega}}(m\omega q-ip)$$<br>
-$$粒子产生算符a^{\dagger}=\sqrt{ \frac{1}{2m\hbar\omega} }(m\omega +ip)$$<br>
-则逆变换为：$q=\sqrt{ \frac{\hbar}{2m\omega}}(a+a^{\dagger})$ 、$p=-i\sqrt{ \frac{\hbar\omega}{2} }(a-a^{\dagger})$<br>
-由于$[q,p]=i\hbar$则$[a,a^{\dagger}]=1$,对应哈密顿量为$$H=\hbar\omega(a^{\dagger}a+\frac{1}{2})=\hbar\omega(\hat{n}+\frac{1}{2})$$其中$\hat{n}=aa^{\dagger}$<br>
-能级$E_{n}=\hbar\omega(n+\frac{1}{2})$，常用公式：$$\begin{align}<br>
-a|n\rangle=\sqrt{ n }|n-1\rangle\a^{\dagger}|n\rangle=\sqrt{ n+1 }|n+1\rangle\归纳法得|n\rangle=\frac{(a^{\dagger})^n}{\sqrt{ n! }}|0\rangle<br>
-\end{align}$$</p>
-<h3 id="1-5-2-量子态-n-rangle-在坐标表象中的表达式">1.5.2 量子态$|n\rangle$在坐标表象中的表达式</h3>
-<p>$$\psi_{0}(x)=(\frac{m\omega}{\pi \hbar})^{\frac{1}{4}}e^{-\frac{1}{2}(\frac{m\omega}{\hbar})x^2}$$<br>
-递推关系：$\psi_{n+1}(x)=\frac{1}{\sqrt{ n+1 }}(\sqrt{ \frac{1}{2m\hbar\omega} })(m\omega x-\hbar\frac{d}{dx})\psi_{n}(x)$<br>
-厄米多项式：$H_{n}(x)=e^{\frac{x^2}{2}}(x-\frac{d}{dx})^2e^{-\frac{x^2}{2}}$<br>
-$$\psi_{n}(x)=(\frac{m\omega}{\pi \hbar})^{\frac{1}{4}}\frac{1}{\sqrt{ 2^n n! }}e^{-\frac{m\omega}{2\hbar}x^2}H_{n}(\sqrt{ \frac{m\omega}{\hbar} }x)$$</p>
-<h2 id="1-6-两态系统、泡利自旋算符">1.6 两态系统、泡利自旋算符</h2>
-<h3 id="1-6-1两态系统">1.6.1两态系统</h3>
-<p>常见的两态系统：1）电子自旋$|\uparrow|$、$|\downarrow|$，2）光子：水平偏振态$|H\rangle$和垂直偏振态$|V\rangle$;45°偏振态和-45°偏振态；左旋偏振态和右旋偏振态，3）基态$|g\rangle$和激发态$|e\rangle$.</p>
-<h3 id="1-6-2讨论电子自旋">1.6.2讨论电子自旋</h3>
-<p>$$[S_{\alpha},S_{\beta}]=\varepsilon_{\alpha\beta\gamma}i\hbar S_{\gamma}$$<br>
-$\varepsilon_{\alpha\beta\gamma}$为三阶全反对称张量，$\varepsilon_{\alpha\beta\gamma}=\begin{cases}+1,\alpha\beta\gamma=xyz,yzx,zxy\ -1,\alpha\beta\gamma=zyx,yxz,xzy\0,任意两个下标相等 \end{cases}$<br>
-泡利算符：$[\sigma_{\alpha}\sigma_{\beta}]=i2\sigma_{\gamma}$<br>
-在$\sigma_{z}$表象中：$\sigma_{z}=\begin{bmatrix}1  &amp; 0\0 &amp;  -1\end{bmatrix}=|\uparrow\rangle\langle\uparrow|-|\downarrow\rangle\langle\downarrow|$<br>
-$\sigma_{x}=\begin{bmatrix}0  &amp; 1\1 &amp;  0\end{bmatrix}=|\uparrow\rangle\langle\downarrow|+|\downarrow\rangle\langle\uparrow|$<br>
-$\sigma_{y}=\begin{bmatrix}0  &amp; -i\i &amp;  0\end{bmatrix}=i(-|\uparrow\rangle\langle\downarrow|+|\downarrow\rangle\langle\uparrow|)$<br>
-$\sigma_{+}=\begin{bmatrix}0  &amp; 1\0 &amp;  0\end{bmatrix}=|\uparrow\rangle\langle\downarrow|$<br>
-$\sigma_{-}=\begin{bmatrix}0  &amp; 0\1 &amp;  0\end{bmatrix}=|\downarrow\rangle\langle\uparrow|$<br>
-即$$\begin{align}<br>
-\sigma_{x}|\uparrow\rangle=|\downarrow\rangle,\sigma_{x}|\downarrow\rangle=|\uparrow\rangle\ \sigma_{y}|\uparrow\rangle=i|\downarrow\rangle,\sigma_{y}|\downarrow\rangle=-i|\uparrow\rangle\<br>
-\sigma_{+}|\uparrow\rangle=0,\sigma_{+}|\downarrow\rangle=|\uparrow\rangle \<br>
-\sigma_{-}|\uparrow\rangle=|\downarrow\rangle,\sigma_{-}|\downarrow\rangle=0<br>
-\end{align}$$<br>
-则$|\uparrow\rangle$和$|\downarrow\rangle$分别是$\sigma_{z}$的本征值为$\pm1$的本征态；$\sigma_{x}$让自旋反转；$\sigma_{y}$让自旋反转同时产生$\pm\frac{\pi}{2}$的相移；$\sigma_{+}\sigma_{-}$分别为自旋升和降算符。</p>
-<h2 id="1-7-多体系统、约化密度算符、纠缠态、von-Neumann熵">1.7 多体系统、约化密度算符、纠缠态、von Neumann熵</h2>
-<h3 id="1-7-1-多体系统">1.7.1 多体系统</h3>
-<p>子系统$|\psi_{A}\rangle$、$|\psi_{B}\rangle$,复合系统态矢$|\psi_{AB}\rangle$,当$|\psi_{AB}\rangle=|\psi_{A}\rangle\otimes|\psi_{B}\rangle$时，处于直积态，也称可分态，否则为纠缠态，也称不可分态，如$|\psi_{AB}\rangle=\alpha|\psi_{A_{1}}\rangle|\psi_{B_{1}\rangle}+\beta|\psi_{A_{2}}\rangle|\psi_{B_{2}}\rangle$<br>
-<strong>直积：</strong> $A ⊗ B = \begin{pmatrix}a_{11}B &amp; a_{12}B &amp; \cdots &amp; a_{1n}B \a_{21}B &amp; a_{22}B &amp; \cdots &amp; a_{2n}B \\vdots &amp; \vdots &amp; \ddots &amp; \vdots \a_{m1}B &amp; a_{m2}B &amp; \cdots &amp; a_{mn}B\end{pmatrix}$</p>
-<h3 id="1-7-2-约化密度算符">1.7.2 约化密度算符</h3>
-<p>$\rho_{A}=Tr_{B}(\rho)​$即子系统A的约化密度算符<br>
-偏迹 = <strong>在多体系统中，对某一个子系统的自由度求迹</strong><br>
-数学公式：$ρ_{A}=Tr_{B}(ρ)=\sum_{i}\langle i|<em>{B}\rho|i\rangle</em>{B}$</p>
-<ul>
-<li>$∣i⟩_{B}$是B空间的正交基</li>
-</ul>
-<h2 id="1-8-量子力学中的绘景">1.8 量子力学中的绘景</h2>
-<h3 id="1-8-1-常用的三种绘景">1.8.1 常用的三种绘景</h3>
-<p><strong>绘景相当于参考系</strong><br>
-1).薛定谔绘景：算符不随时间变化，而态矢量随时间变化，其演化服从薛定谔方程，$i\hbar \frac{d}{dt}|\psi_{S}(t)\rangle=H_{S}|\psi_{S}(t)\rangle$<br>
-2).海森堡绘景：态矢量不随时间变化，而算符随时间变化，其演化服从海森堡方程，$\frac{d}{dt}A_{H}(t)=\frac{i}{\hbar}[H,A_{H}(t)]$<br>
-3).相互作用绘景：态矢量和算符均随时间变化，其中态矢量服从薛定谔方程，算符服从海森堡方程，算符的期待值不随绘景的变化。</p>
-<h3 id="1-8-2-一般绘景下的相互转换">1.8.2 一般绘景下的相互转换</h3>
-<p>设有两个绘景，薛定谔方程分别为：$i\hbar \frac{d}{dt}|\psi\rangle=H|\psi\rangle,i\hbar \frac{d}{dt}|\psi^{‘}\rangle=H^{’}|\psi^{‘}\rangle$<br>
-设$|\psi\rangle=U|\psi^{’}\rangle,|\psi^{‘}\rangle=U^{^{\dagger}}|\psi\rangle$<br>
-$$<br>
-即 H^{’}=i\hbar \frac{dU^{^{\dagger}}}{dt}U+U^{^{\dagger}}HU<br>
-$$<br>
-升降算符相关公式：<br>
-$$\begin{align}<br>
-U^{^{\dagger}}\sigma U=e^{i \frac{1}{2}\omega_{a}\sigma_{z}t}\sigma e^{-i \frac{1}{2}\omega_{a}\sigma_{z}t}=\sigma e^{-i\omega_{a}t} \<br>
-U^{^{\dagger}}\sigma^{^{\dagger}} U=e^{i \frac{1}{2}\omega_{a}\sigma_{z}t}\sigma^{^{\dagger}} e^{-i \frac{1}{2}\omega_{a}\sigma_{z}t}=\sigma^{\dagger} e^{i\omega_{a}t} \<br>
-U^{^{\dagger}}a^{^{\dagger}} U=e^{i\omega a^{\dagger}at}a^{^{\dagger}}e^{-i\omega a^{^{\dagger}}at}=a^{^{\dagger}}e^{i\omega t} \<br>
-U^{^{\dagger}}a U=e^{i\omega a^{\dagger}at}ae^{-i\omega a^{^{\dagger}}at}=ae^{-i\omega t}</p>
-<p>\end{align}$$</p>
-<h1>第二章 经典电磁场与原子的相互作用</h1>
-<h2 id="2-1-多模电磁场与多能级原子相互作用的一般形式">2.1 多模电磁场与多能级原子相互作用的一般形式</h2>
-<h3 id="2-1-1-哈密顿量的形式">2.1.1 哈密顿量的形式</h3>
-<p>半经典理论，$H_{A}=H_{A}\sum_{k}|k\rangle\left\langle  k|=\sum_{k}E_{k}|k \right\rangle\langle k|=\sum_{k}\hbar \omega_{k}|k\rangle\langle k|$,电偶极近似下，$V=-E\sum_{j,k}d_{jk}|j\rangle\langle k|$,总哈密顿量为：<br>
-$$\begin{align}<br>
-H&amp;=H_{A}+V \<br>
-&amp;=\sum_{k}\hbar \omega_{k}|k\rangle\langle k|-E\sum_{j,k}d_{jk}|j\rangle\langle k |<br>
-\end{align}$$</p>
-<h3 id="2-1-2-薛定谔方程的求解">2.1.2 薛定谔方程的求解</h3>
-<p>$$\langle m|V|n\rangle=\left\langle  m|\left( -E\cdot \sum_{j,k}d_{jk}|j \right\rangle\langle k|  \right)|n\rangle=-E\cdot \sum_{j,k}d_{jk}\delta_{mj}\delta_{kn}=-E\cdot d_{mn}i\hbar \dot{c}<em>{m}(t)=-E\cdot \sum</em>{n}d_{mn}c_{n}(t)e^{i\omega_{mn}t},\omega_{mn}=\omega_{m}-\omega_{n}$$<br>
-为多能级原子与经典多模电磁场在电偶极矩相互作用下的一般形式</p>
-<h3 id="2-2-单模电磁场与多能级原子的相互作用">2.2 单模电磁场与多能级原子的相互作用</h3>
-<p>引入二能级原子近似，考虑单模电磁场，$$E(t)=E_{0}\cos(\omega t)=\frac{1}{2}E_{0}(e^{i\omega t}+e^{-i\omega t})$$<br>
-条件：</p>
-<ul>
-<li>一级近似微扰，成立条件为相互作用时间较短，相互作用强度较弱，即系统以后时刻t的状态偏离初态不远。</li>
-<li>旋转波近似，即略去含$(\omega_{mi}+\omega)$的反旋转波项<br>
-推导：</li>
-<li>$e^{i\theta}-1=e^{i\frac{\theta}{2}}\left( e^{i\frac{\theta}{2}}-e^{-i\frac{\theta}{2}} \right)=e^{i\frac{\theta}{2}}\cdot 2i\sin\left( \frac{\theta}{2} \right)$</li>
-<li>$sinc(x)=\frac{\sin(x)}{x}$</li>
-</ul>
-<h3 id="2-3-单模电磁场与二能级原子的相互作用">2.3 单模电磁场与二能级原子的相互作用</h3>
-<h3 id="2-3-1-哈密顿量的形式">2.3.1 哈密顿量的形式</h3>
-<p>原子的两个能级为上能级$|e\rangle$其能量为$\hbar \omega_{e}=\frac{\hbar \omega_{0}}{2}$下能级$|g\rangle$其能量$\hbar \omega_{g}= \frac{\hbar\omega_{0}}{2}$<br>
-原子的自由哈密顿量为<br>
-$$H_{0}=\hbar \omega_{e}|e\rangle\langle e|+\hbar \omega_{g}|g\rangle\langle g|=\frac{1}{2}\hbar \omega_{0}\sigma_{z}$$<br>
-其中泡利算符$\sigma_{z}=|e\rangle\langle e|-|g\rangle\langle g|$称为原子布居差算符<br>
-两能级原子的电偶极矩为<br>
-$$d=d_{eg}|e\rangle\langle g|+d_{ge}|g\rangle\langle e|=\mu(\sigma^++\sigma)$$<br>
-相互作用哈密顿量为$V=-d\cdot E=\hbar \Omega_{R}(\sigma^++\sigma)\cos(\omega t+\varphi)$<br>
-其中，$\Omega_{R}=-\mu\cdot  \frac{E_{0}}{\hbar}$，称为Rabi频率，描述原子与光场之间的耦合强度<br>
-系统的总哈密顿量为$$H=H_{0}+V=\frac{1}{2}\hbar \omega_{0}\sigma_{z}+\hbar \Omega_{R}(\sigma^+ +\sigma)\cos(\omega t+\varphi)$$<br>
-相互作用绘景下哈密顿量：其中$\Delta=\omega_{0}-\omega$为失谐量<br>
-$$H_{I}=\frac{1}{2}\hbar \Omega_{R}(\sigma^+ e^{i(\Delta t-\varphi)})+\sigma e^{-i(\Delta t-\varphi)})$$</p>
-<h3 id="2-3-2-薛定谔方程和密度矩阵方程的求解">2.3.2 薛定谔方程和密度矩阵方程的求解</h3>
-<ol>
-<li>共振相互作用$(\Delta=0)$<br>
-$$H_{I}=\frac{1}{2}\hbar \Omega_{R}(\sigma^+ e^{-i\varphi}+\sigma e^{i\varphi})$$</li>
-</ol>
-<ul>
-<li>概率幅法，设$|\psi\rangle=c_{e}(t)|e\rangle +c_{g}(t)|g\rangle$通过求解$c_{e}(t),c_{g}(t)$来得到态矢量$|\psi(t)\rangle$ $$|\psi(t)\rangle=\cos\left( \frac{\Omega_{R}}{2}t \right)|e\rangle-ie^{i\varphi}\sin\left( {\frac{\Omega_R}{2}} t\right)|g\rangle$$</li>
-<li>时间演化算符方法，设$|\psi(t)\rangle=U(t)|\psi_{0}\rangle$通过求得时间演化算符来对待态矢量，若哈密顿量不含时间，$U(t)=e^{-\frac{i}{\hbar}Ht}$<br>
-原子以频率$\Omega_{R}$在上下能态之间作简谐振荡，称作Rabi振荡</li>
-</ul>
-<ol>
-<li>非共振相互作用（失谐相互作用$\Delta\neq 0$）</li>
-</ol>
-<ul>
-<li>概率幅方法$$c_{e}(t)=e^{i\frac{\Delta}{2}t}\left[ \cos\left( \frac{\Omega}{2}t \right) -i\frac{\Delta}{\Omega}\sin\left( \frac{\Omega}{2}t \right)\right]$$<br>
-$$c_{g}(t)=-ie^{i\frac{\Delta}{2}t}\frac{\Omega_{R}}{\Omega}e^{i\varphi}\sin(\frac{\Omega}{2}t)$$<br>
-计算平均值时，应该取同一个绘景的算符和态矢量</li>
-<li>密度矩阵方法<br>
-$$\rho(t)=|\psi(t)\rangle\langle\psi(t)|$$<br>
-密度算符的矩阵元：$$\begin{align}<br>
-\rho_{e e}(t)=\langle e { |\rho| e\rangle  }=P_{e}(t) \<br>
-\rho_{e g}(t)=\langle e { |\rho| g\rangle  }=c_{e}(t)c^<em><em>{g}(t) \<br>
-\rho</em>{g e}(t)=\langle g { |\rho| e\rangle  }=c^</em><em>{e}(t)c</em>{g}(t)  \<br>
-\rho_{g g}(t)=\langle g { |\rho| g\rangle  }=P_{g}(t)<br>
-\end{align}$$<br>
-对角元表示原子的布居概率<br>
-导出密度矩阵元的时间演化方程<br>
-$$\frac{d}{dt}\rho_{g g}(t)=-\frac{d}{dt}\rho_{e e}(t);\frac{d}{dt}\rho_{ge}=\frac{d}{dt}\rho^*_{eg}(t)$$</li>
-<li>Bloch矢量（W，U，V）及其演化方程<br>
-引入Bloch矢量<br>
-$$\begin{align}<br>
-W=\rho_{e e }-\rho_{gg} \<br>
-U=\frac{1}{2}(\rho_{e g}+\rho_{g e}) \<br>
-V=\frac{1}{2i}(\rho_{eg}-\rho_{ge})<br>
-\end{align}$$<br>
-即$\rho_{eg}=U+iV,\rho_{g e}=U-iV$<br>
-可导出密度矩阵演化方程</li>
-</ul>
-<h3 id="2-3-3-耗散的唯象描述">2.3.3 耗散的唯象描述</h3>
-<ol>
-<li>在概率幅方程中唯象引入耗散<br>
-$$\frac{d}{dt}c_{k}(t)=-\frac{\gamma_{k}}{2}c_{k}(t)+非耗散项，k=e,g$$</li>
-<li>在密度矩阵方程中唯象引入耗散<br>
-$$\begin{align}<br>
-\frac{d}{dt}\rho_{e e}(t)=-\gamma_{e}\rho<br>
-<em>{e e}(t)+非耗散项 \<br>
-d/dt\rho</em>{gg}(t) =-\gamma_{g}\rho_{gg}(t)+非耗散项 \<br>
-\frac{d}{dt }\rho_{e g}(t)=-\frac{\gamma_{e}+\gamma_{g}}{2}\rho_{e g}(t)+非耗散项 \<br>
-\frac{d}{dt}\rho_{g e}(t)=\frac{d}{dt}\rho^*_{e g}(t)\<br>
-\end{align}$$</li>
-</ol>
-<h2 id="2-4-双模电磁场与三能级原子的相互作用">2.4 双模电磁场与三能级原子的相互作用</h2>
-<p>![[Pasted image 20250630214433.png]]<br>
-双模电磁场与三能级原子的^型相互作用<br>
-$$H_{0}=\sum_{k}\hbar \omega_{k}|k\rangle\langle k|<br>
-=\hbar \omega_{a}|a\rangle\langle a|+\hbar \omega_{b}|b\rangle\langle b|+\hbar \omega_{c}|c\rangle\langle c|$$<br>
-相互作用绘景中电偶极近似和旋波近似下的相互作用哈密顿量<br>
-$$V_{I}=-\frac{\hbar}{2} [\Omega_{1}e^{-i\varphi_{1}}e^{i\Delta t}|a\rangle\langle b|+\Omega_{2}e^{-i\varphi_{2}}e^{i\Delta t}|a\rangle\langle c|+H.c.]$$<br>
-其中$\Omega_{1}=\mu_{ab}\cdot \frac{E^{(0)}<em>{1}}{\hbar}$,$\Omega</em>{2}=\mu_{ac}\cdot \frac{E^{(0)}<em>{2}}{\hbar}$,$\Delta</em>{1}=\omega_{ab}-\omega_{1}=\omega_{a}-\omega_{b}-\omega_{1}$,$\Delta_{2}=\omega_{ac}-\omega_{2}=\omega_{a}-\omega_{c}-\omega_{2}$</p>
-<ul>
-<li>设原子初态为$|\psi(0)=\cos\left( \frac{\vartheta}{2} \right)|b\rangle+\sin\left( \frac{\vartheta}{2} \right) e^{-i\psi}|c\rangle$</li>
-<li>当满足条件$\Omega_{1}=\Omega_{2},$,$\vartheta=\frac{\pi}{2}$，$(\varphi_{1}-\varphi_{2}-\psi)=\pm \pi$时，由于两个跃迁通道之间的相消干涉，初始态处在两个下能级的相干叠加态$|\psi(0)\rangle=\frac{1}{\sqrt{ 2 }}|b\rangle+\frac{1}{\sqrt{ 2 }}e^{-i\psi}|c\rangle$，这种现象称为相干布局囚禁，这个状态为囚禁态</li>
-<li>将原子的布居数从初态$|b\rangle$转移到末态$|c\rangle$，而不会将原子布居到激发态$|a\rangle$上，这个过程叫做相干布居数转移，也叫做绝热布居数转移</li>
-</ul>
-<h1>第三章 电磁场物理量的算符表示</h1>
-<p>电磁场的量子化，即把描述电磁场的物理量（电场强度E，磁感应强度B，能量H等）用算符表示，把电磁场的状态用态矢量或密度算符表示<br>
-麦克斯韦方程（真空中）<br>
-$$\begin{align}<br>
-\nabla\times E=-\frac{\partial B}{\partial t} \<br>
-\nabla\times B=\frac{1}{c^2}\frac{\partial E}{\partial t} \<br>
-\nabla \cdot B=0 \<br>
-\nabla \cdot E=0<br>
-\end{align}$$</p>
+                <h1 id="第一章-量子力学基础">第一章 量子力学基础</h1>
+<h2 id="态矢量和力学算符的表象及表象变化">1.3
+态矢量和力学算符的表象及表象变化</h2>
+<p>离散表象：能量表象、角动量表象 <span
+class="math display">|<em>ψ</em>⟩ = ∑<sub><em>n</em></sub>|<em>ψ</em><sub><em>n</em></sub>⟩⟨<em>ψ</em><sub><em>n</em></sub>|<em>ψ</em>⟩ = ∑<sub><em>n</em></sub><em>c</em><sub><em>n</em></sub>|<em>ψ</em><sub><em>n</em></sub>⟩</span>
+其中<span
+class="math inline">|<em>ψ</em><sub><em>n</em></sub>⟩</span>是基矢，<span
+class="math inline"><em>c</em><sub><em>n</em></sub> = ⟨<em>ψ</em><sub><em>n</em></sub>|<em>ψ</em>⟩</span>,态矢量<span
+class="math inline">$|\psi\rangle=\begin{bmatrix}[c_{1}\\c_{2}\\c_{3}]\end{bmatrix}$</span>,归一化条件：<span
+class="math inline">∑<sub><em>n</em></sub>|<em>c</em><sub><em>n</em></sub>|<sup>2</sup> = 1</span>
+连续表象：坐标表象、动量表象 <span
+class="math display">|<em>ψ</em>⟩ = ∫<em>d</em><em>x</em>|<em>x</em>⟩⟨<em>x</em>|<em>ψ</em>⟩ = ∫<em>d</em><em>x</em>|<em>x</em>⟩<em>ψ</em>(<em>x</em>)</span>
+其中<span
+class="math inline"><em>ψ</em>(<em>x</em>) = ⟨<em>x</em>|<em>ψ</em>⟩</span>即基态在x表象下的表示，也就是波函数，归一化条件：<span
+class="math inline">∫<em>d</em><em>x</em>|<em>ψ</em>(<em>x</em>)|<sup>2</sup> = 1</span>
+算符在离散表象中表示为矩阵，在连续表象中表示为函数。 表象变换： <span
+class="math display">|<em>ψ</em>⟩ = ∑<sub><em>n</em></sub><em>a</em><sub><em>n</em></sub>|<em>A</em><sub><em>n</em></sub>⟩ = ∑<sub><em>m</em></sub><em>b</em><sub><em>m</em></sub>|<em>B</em><sub><em>m</em></sub>⟩</span>
+<span
+class="math inline"><em>b</em><sub><em>m</em></sub> = ∑<sub><em>n</em></sub><em>S</em><sub><em>m</em><em>n</em></sub><em>a</em><sub><em>n</em></sub></span>其中<span
+class="math inline"><em>S</em><sub><em>m</em><em>n</em></sub> = ⟨<em>B</em><sub><em>m</em></sub>|<em>A</em><sub><em>n</em></sub>⟩</span>，<span
+class="math inline"><em>S</em> = {<em>S</em><sub><em>m</em><em>n</em></sub>}</span>为幺正矩阵。
+态矢：<span
+class="math inline"><em>ψ</em>(<em>B</em>) = <em>S</em><em>ψ</em>(<em>A</em>)</span>
+算符：<span
+class="math inline"><em>F</em>(<em>B</em>) = <em>S</em><em>F</em>(<em>A</em>)<em>S</em><sup>†</sup></span>
+左右矢转置共轭 ## 1.4 纯态、混合态、密度算符 ### 1.4.1 算符 纯态(pure
+state)：可以用态矢量<span
+class="math inline">|<em>ψ</em>⟩</span>表示；混合态(mix
+states)：以不同的概率<span
+class="math inline"><em>P</em><sub><em>ψ</em></sub></span>处于不同的纯态，用密度算符表示。
+纯态对应的密度算符：<span
+class="math inline"><em>ρ</em><sub><em>ψ</em></sub> = |<em>ψ</em>⟩⟨<em>ψ</em>|</span>
+混合态对应的密度算符：<span
+class="math inline"><em>ρ</em><sub><em>m</em><em>s</em></sub> = ∑<sub><em>ψ</em></sub><em>P</em><sub><em>ψ</em></sub><em>ρ</em><sub><em>ψ</em></sub></span>
+平均值：纯态：<span
+class="math inline">⟨<em>A</em>⟩ = ⟨<em>ψ</em>|<em>A</em>|<em>ψ</em>⟩ = <em>T</em><em>r</em>(|<em>ψ</em>⟩⟨<em>ψ</em>|<em>A</em>) = <em>T</em><em>r</em>(<em>ρ</em><em>A</em>)</span>
+混合态：<span
+class="math inline">⟨<em>A</em>⟩ = <em>T</em><em>r</em>(<em>ρ</em><sub><em>m</em><em>s</em></sub><em>A</em>) = ∑<sub><em>ψ</em></sub><em>P</em><sub><em>ψ</em></sub>⟨<em>A</em>⟩<sub><em>ψ</em></sub></span>，两重平均
+<strong>矩阵的迹：矩阵对角线元素之和：</strong><span
+class="math inline">$Tr(X)=\sum_{i=1}^{n}=x_{ii}$</span>
+<strong>混合态<span
+class="math inline">≠</span>叠加态形式的纯态</strong>
+混合态的密度算符只有<strong>对角项</strong>，而纯态的密度算符还出现<strong>非对角项</strong>。非对角项引起的干涉效应称为<strong>相干项</strong>。实际问题中，描述量子态的密度算符随时间衰减，其对角元的衰减伴随<strong>能量损耗</strong>，非对角元的衰减伴随
+相干性消退，即为<strong>消相干或退相干（decoherence）（ps:非对角项为0不代表相干项为0）</strong>
+### 1.4.2 eg:光子数态<span
+class="math inline">|<em>n</em>⟩</span>，其密度算符为<span
+class="math inline"><em>ρ</em><sub><em>n</em></sub> = |<em>n</em>⟩⟨<em>n</em>|</span>，<span
+class="math inline"><em>n</em></span>为光子数，相干态<span
+class="math inline">|<em>α</em>⟩</span>的密度算符为<span
+class="math display"><em>ρ</em><sub><em>α</em></sub> = |<em>α</em>⟩⟨<em>α</em>|</span>
+相干态在光子数态表象中的形式为：<span
+class="math display">$$|\alpha\rangle=\sum_{n}c_{n}|n\rangle=\sum_{n}\sqrt{
+P_{n} }e^{i\psi_{n}}|n\rangle$$</span> 则<span
+class="math display">$$\begin{align}
+\rho_{\alpha}&amp;=\sum_{m,n}\sqrt{ P_{m}P_{n}
+}e^{i(\psi_{m}-\psi_{n})}|m\rangle
+\langle   n|\\&amp;=\sum_{n}P_{n}|n   \rangle\langle n|+\sum_{m\neq
+n}\sqrt{ P_{m}P_{n} }e^{i(\psi_{m}-\psi_{n})}|m\rangle
+\langle   n|\\&amp;=(对角项)+（非对角项）\end{align}$$</span> ### 1.4.3
+密度算符的运动方程 纯态：（态矢量的运动方程两边右乘<span
+class="math inline">⟨<em>ψ</em>|</span>后推导而来） <span
+class="math display">$$i\hbar\frac{d}{dt}\rho=[H,\rho]=H\rho-\rho
+H$$</span> ## 1.5 一维谐振子 ### 1.5.1 本征态和本征能量</p>
+<p>哈密顿量：<span
+class="math inline">$H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2q^2$</span>
+引入变换：<span class="math display">$$粒子湮灭算符a=\sqrt{
+\frac{1}{2m\hbar\omega}}(m\omega q-ip)$$</span> <span
+class="math display">$$粒子产生算符a^{\dagger}=\sqrt{
+\frac{1}{2m\hbar\omega} }(m\omega +ip)$$</span> 则逆变换为：<span
+class="math inline">$q=\sqrt{
+\frac{\hbar}{2m\omega}}(a+a^{\dagger})$</span> 、<span
+class="math inline">$p=-i\sqrt{ \frac{\hbar\omega}{2}
+}(a-a^{\dagger})$</span> 由于<span
+class="math inline">[<em>q</em>, <em>p</em>] = <em>i</em>ℏ</span>则<span
+class="math inline">[<em>a</em>, <em>a</em><sup>†</sup>] = 1</span>,对应哈密顿量为<span
+class="math display">$$H=\hbar\omega(a^{\dagger}a+\frac{1}{2})=\hbar\omega(\hat{n}+\frac{1}{2})$$</span>其中<span
+class="math inline"><em>n̂</em> = <em>a</em><em>a</em><sup>†</sup></span>
+能级<span
+class="math inline">$E_{n}=\hbar\omega(n+\frac{1}{2})$</span>，常用公式：<span
+class="math display">$$\begin{align}
+a|n\rangle=\sqrt{ n }|n-1\rangle\\a^{\dagger}|n\rangle=\sqrt{ n+1
+}|n+1\rangle\\归纳法得|n\rangle=\frac{(a^{\dagger})^n}{\sqrt{ n!
+}}|0\rangle
+\end{align}$$</span> ### 1.5.2 量子态<span
+class="math inline">|<em>n</em>⟩</span>在坐标表象中的表达式 <span
+class="math display">$$\psi_{0}(x)=(\frac{m\omega}{\pi
+\hbar})^{\frac{1}{4}}e^{-\frac{1}{2}(\frac{m\omega}{\hbar})x^2}$$</span>
+递推关系：<span class="math inline">$\psi_{n+1}(x)=\frac{1}{\sqrt{ n+1
+}}(\sqrt{ \frac{1}{2m\hbar\omega} })(m\omega
+x-\hbar\frac{d}{dx})\psi_{n}(x)$</span> 厄米多项式：<span
+class="math inline">$H_{n}(x)=e^{\frac{x^2}{2}}(x-\frac{d}{dx})^2e^{-\frac{x^2}{2}}$</span>
+<span class="math display">$$\psi_{n}(x)=(\frac{m\omega}{\pi
+\hbar})^{\frac{1}{4}}\frac{1}{\sqrt{ 2^n n!
+}}e^{-\frac{m\omega}{2\hbar}x^2}H_{n}(\sqrt{ \frac{m\omega}{\hbar}
+}x)$$</span> ## 1.6 两态系统、泡利自旋算符 ### 1.6.1两态系统
+常见的两态系统：1）电子自旋<span class="math inline">| ↑ |</span>、<span
+class="math inline">| ↓ |</span>，2）光子：水平偏振态<span
+class="math inline">|<em>H</em>⟩</span>和垂直偏振态<span
+class="math inline">|<em>V</em>⟩</span>;45°偏振态和-45°偏振态；左旋偏振态和右旋偏振态，3）基态<span
+class="math inline">|<em>g</em>⟩</span>和激发态<span
+class="math inline">|<em>e</em>⟩</span>. ### 1.6.2讨论电子自旋 <span
+class="math display">[<em>S</em><sub><em>α</em></sub>, <em>S</em><sub><em>β</em></sub>] = <em>ε</em><sub><em>α</em><em>β</em><em>γ</em></sub><em>i</em>ℏ<em>S</em><sub><em>γ</em></sub></span>
+<span
+class="math inline"><em>ε</em><sub><em>α</em><em>β</em><em>γ</em></sub></span>为三阶全反对称张量，<span
+class="math inline">$\varepsilon_{\alpha\beta\gamma}=\begin{cases}+1,\alpha\beta\gamma=xyz,yzx,zxy\\
+-1,\alpha\beta\gamma=zyx,yxz,xzy\\0,任意两个下标相等 \end{cases}$</span>
+泡利算符：<span
+class="math inline">[<em>σ</em><sub><em>α</em></sub><em>σ</em><sub><em>β</em></sub>] = <em>i</em>2<em>σ</em><sub><em>γ</em></sub></span>
+在<span
+class="math inline"><em>σ</em><sub><em>z</em></sub></span>表象中：<span
+class="math inline">$\sigma_{z}=\begin{bmatrix}1  &amp; 0\\0
+&amp;  -1\end{bmatrix}=|\uparrow\rangle\langle\uparrow|-|\downarrow\rangle\langle\downarrow|$</span>
+<span class="math inline">$\sigma_{x}=\begin{bmatrix}0  &amp; 1\\1
+&amp;  0\end{bmatrix}=|\uparrow\rangle\langle\downarrow|+|\downarrow\rangle\langle\uparrow|$</span>
+<span class="math inline">$\sigma_{y}=\begin{bmatrix}0  &amp; -i\\i
+&amp;  0\end{bmatrix}=i(-|\uparrow\rangle\langle\downarrow|+|\downarrow\rangle\langle\uparrow|)$</span>
+<span class="math inline">$\sigma_{+}=\begin{bmatrix}0  &amp; 1\\0
+&amp;  0\end{bmatrix}=|\uparrow\rangle\langle\downarrow|$</span> <span
+class="math inline">$\sigma_{-}=\begin{bmatrix}0  &amp; 0\\1
+&amp;  0\end{bmatrix}=|\downarrow\rangle\langle\uparrow|$</span> 即<span
+class="math display">$$\begin{align}
+\sigma_{x}|\uparrow\rangle=|\downarrow\rangle,\sigma_{x}|\downarrow\rangle=|\uparrow\rangle\\
+\sigma_{y}|\uparrow\rangle=i|\downarrow\rangle,\sigma_{y}|\downarrow\rangle=-i|\uparrow\rangle\\
+\sigma_{+}|\uparrow\rangle=0,\sigma_{+}|\downarrow\rangle=|\uparrow\rangle
+\\
+\sigma_{-}|\uparrow\rangle=|\downarrow\rangle,\sigma_{-}|\downarrow\rangle=0
+\end{align}$$</span> 则<span class="math inline">| ↑ ⟩</span>和<span
+class="math inline">| ↓ ⟩</span>分别是<span
+class="math inline"><em>σ</em><sub><em>z</em></sub></span>的本征值为<span
+class="math inline">±1</span>的本征态；<span
+class="math inline"><em>σ</em><sub><em>x</em></sub></span>让自旋反转；<span
+class="math inline"><em>σ</em><sub><em>y</em></sub></span>让自旋反转同时产生<span
+class="math inline">$\pm\frac{\pi}{2}$</span>的相移；<span
+class="math inline"><em>σ</em><sub>+</sub><em>σ</em><sub>−</sub></span>分别为自旋升和降算符。
+## 1.7 多体系统、约化密度算符、纠缠态、von Neumann熵 ### 1.7.1 多体系统
+子系统<span
+class="math inline">|<em>ψ</em><sub><em>A</em></sub>⟩</span>、<span
+class="math inline">|<em>ψ</em><sub><em>B</em></sub>⟩</span>,复合系统态矢<span
+class="math inline">|<em>ψ</em><sub><em>A</em><em>B</em></sub>⟩</span>,当<span
+class="math inline">|<em>ψ</em><sub><em>A</em><em>B</em></sub>⟩ = |<em>ψ</em><sub><em>A</em></sub>⟩ ⊗ |<em>ψ</em><sub><em>B</em></sub>⟩</span>时，处于直积态，也称可分态，否则为纠缠态，也称不可分态，如<span
+class="math inline">|<em>ψ</em><sub><em>A</em><em>B</em></sub>⟩ = <em>α</em>|<em>ψ</em><sub><em>A</em><sub>1</sub></sub>⟩|<em>ψ</em><sub><em>B</em><sub>1</sub>⟩</sub> + <em>β</em>|<em>ψ</em><sub><em>A</em><sub>2</sub></sub>⟩|<em>ψ</em><sub><em>B</em><sub>2</sub></sub>⟩</span>
+<strong>直积：</strong> <span class="math inline">$A ⊗ B =
+\begin{pmatrix}a_{11}B &amp; a_{12}B &amp; \cdots &amp; a_{1n}B
+\\a_{21}B &amp; a_{22}B &amp; \cdots &amp; a_{2n}B \\\vdots &amp; \vdots
+&amp; \ddots &amp; \vdots \\a_{m1}B &amp; a_{m2}B &amp; \cdots &amp;
+a_{mn}B\end{pmatrix}$</span> ### 1.7.2 约化密度算符 <span
+class="math inline"><em>ρ</em><sub><em>A</em></sub> = <em>T</em><em>r</em><sub><em>B</em></sub>(<em>ρ</em>)​</span>即子系统A的约化密度算符
+偏迹 = <strong>在多体系统中，对某一个子系统的自由度求迹</strong>
+数学公式：<span
+class="math inline"><em>ρ</em><sub><em>A</em></sub> = <em>T</em><em>r</em><sub><em>B</em></sub>(<em>ρ</em>) = ∑<sub><em>i</em></sub>⟨<em>i</em>|<sub><em>B</em></sub><em>ρ</em>|<em>i</em>⟩<sub><em>B</em></sub></span>
+- <span
+class="math inline"> ∣ <em>i</em>⟩<sub><em>B</em></sub></span>是B空间的正交基
+## 1.8 量子力学中的绘景 ### 1.8.1 常用的三种绘景
+<strong>绘景相当于参考系</strong>
+1).薛定谔绘景：算符不随时间变化，而态矢量随时间变化，其演化服从薛定谔方程，<span
+class="math inline">$i\hbar
+\frac{d}{dt}|\psi_{S}(t)\rangle=H_{S}|\psi_{S}(t)\rangle$</span>
+2).海森堡绘景：态矢量不随时间变化，而算符随时间变化，其演化服从海森堡方程，<span
+class="math inline">$\frac{d}{dt}A_{H}(t)=\frac{i}{\hbar}[H,A_{H}(t)]$</span>
+3).相互作用绘景：态矢量和算符均随时间变化，其中态矢量服从薛定谔方程，算符服从海森堡方程，算符的期待值不随绘景的变化。
+### 1.8.2 一般绘景下的相互转换 设有两个绘景，薛定谔方程分别为：<span
+class="math inline">$i\hbar
+\frac{d}{dt}|\psi\rangle=H|\psi\rangle,i\hbar
+\frac{d}{dt}|\psi^{'}\rangle=H^{'}|\psi^{'}\rangle$</span> 设<span
+class="math inline">|<em>ψ</em>⟩ = <em>U</em>|<em>ψ</em><sup>′</sup>⟩, |<em>ψ</em><sup>′</sup>⟩ = <em>U</em><sup><sup>†</sup></sup>|<em>ψ</em>⟩</span>
+<span class="math display">$$
+即 H^{'}=i\hbar \frac{dU^{^{\dagger}}}{dt}U+U^{^{\dagger}}HU
+$$</span> 升降算符相关公式： $$$$</p>
+<h1 id="第二章-经典电磁场与原子的相互作用">第二章
+经典电磁场与原子的相互作用</h1>
+<h2 id="多模电磁场与多能级原子相互作用的一般形式">2.1
+多模电磁场与多能级原子相互作用的一般形式</h2>
+<h3 id="哈密顿量的形式">2.1.1 哈密顿量的形式</h3>
+<p>半经典理论，<span
+class="math inline"><em>H</em><sub><em>A</em></sub> = <em>H</em><sub><em>A</em></sub>∑<sub><em>k</em></sub>|<em>k</em>⟩⟨<em>k</em>| = ∑<sub><em>k</em></sub><em>E</em><sub><em>k</em></sub>|<em>k</em>⟩⟨<em>k</em>| = ∑<sub><em>k</em></sub>ℏ<em>ω</em><sub><em>k</em></sub>|<em>k</em>⟩⟨<em>k</em>|</span>,电偶极近似下，<span
+class="math inline"><em>V</em> = −<em>E</em>∑<sub><em>j</em>, <em>k</em></sub><em>d</em><sub><em>j</em><em>k</em></sub>|<em>j</em>⟩⟨<em>k</em>|</span>,总哈密顿量为：
+<span class="math display">$$\begin{align}
+H&amp;=H_{A}+V \\
+&amp;=\sum_{k}\hbar \omega_{k}|k\rangle\langle
+k|-E\sum_{j,k}d_{jk}|j\rangle\langle k |
+\end{align}$$</span> ### 2.1.2 薛定谔方程的求解 <span
+class="math display">⟨<em>m</em>|<em>V</em>|<em>n</em>⟩ = ⟨<em>m</em>|(−<em>E</em> ⋅ ∑<sub><em>j</em>, <em>k</em></sub><em>d</em><sub><em>j</em><em>k</em></sub>|<em>j</em>⟩⟨<em>k</em>|)|<em>n</em>⟩ = −<em>E</em> ⋅ ∑<sub><em>j</em>, <em>k</em></sub><em>d</em><sub><em>j</em><em>k</em></sub><em>δ</em><sub><em>m</em><em>j</em></sub><em>δ</em><sub><em>k</em><em>n</em></sub> = −<em>E</em> ⋅ <em>d</em><sub><em>m</em><em>n</em></sub><em>i</em>ℏ<em>ċ</em><sub><em>m</em></sub>(<em>t</em>) = −<em>E</em> ⋅ ∑<sub><em>n</em></sub><em>d</em><sub><em>m</em><em>n</em></sub><em>c</em><sub><em>n</em></sub>(<em>t</em>)<em>e</em><sup><em>i</em><em>ω</em><sub><em>m</em><em>n</em></sub><em>t</em></sup>, <em>ω</em><sub><em>m</em><em>n</em></sub> = <em>ω</em><sub><em>m</em></sub> − <em>ω</em><sub><em>n</em></sub></span>
+为多能级原子与经典多模电磁场在电偶极矩相互作用下的一般形式 ### 2.2
+单模电磁场与多能级原子的相互作用
+引入二能级原子近似，考虑单模电磁场，<span
+class="math display">$$E(t)=E_{0}\cos(\omega
+t)=\frac{1}{2}E_{0}(e^{i\omega t}+e^{-i\omega t})$$</span> 条件： -
+一级近似微扰，成立条件为相互作用时间较短，相互作用强度较弱，即系统以后时刻t的状态偏离初态不远。
+- 旋转波近似，即略去含<span
+class="math inline">(<em>ω</em><sub><em>m</em><em>i</em></sub> + <em>ω</em>)</span>的反旋转波项
+推导： - <span
+class="math inline">$e^{i\theta}-1=e^{i\frac{\theta}{2}}\left(
+e^{i\frac{\theta}{2}}-e^{-i\frac{\theta}{2}}
+\right)=e^{i\frac{\theta}{2}}\cdot 2i\sin\left( \frac{\theta}{2}
+\right)$</span> - <span
+class="math inline">$sinc(x)=\frac{\sin(x)}{x}$</span> ### 2.3
+单模电磁场与二能级原子的相互作用 ### 2.3.1 哈密顿量的形式
+原子的两个能级为上能级<span
+class="math inline">|<em>e</em>⟩</span>其能量为<span
+class="math inline">$\hbar \omega_{e}=\frac{\hbar
+\omega_{0}}{2}$</span>下能级<span
+class="math inline">|<em>g</em>⟩</span>其能量<span
+class="math inline">$\hbar \omega_{g}= \frac{\hbar\omega_{0}}{2}$</span>
+原子的自由哈密顿量为 <span class="math display">$$H_{0}=\hbar
+\omega_{e}|e\rangle\langle e|+\hbar \omega_{g}|g\rangle\langle
+g|=\frac{1}{2}\hbar \omega_{0}\sigma_{z}$$</span> 其中泡利算符<span
+class="math inline"><em>σ</em><sub><em>z</em></sub> = |<em>e</em>⟩⟨<em>e</em>|−|<em>g</em>⟩⟨<em>g</em>|</span>称为原子布居差算符
+两能级原子的电偶极矩为 <span
+class="math display"><em>d</em> = <em>d</em><sub><em>e</em><em>g</em></sub>|<em>e</em>⟩⟨<em>g</em>|+<em>d</em><sub><em>g</em><em>e</em></sub>|<em>g</em>⟩⟨<em>e</em>| = <em>μ</em>(<em>σ</em><sup>+</sup> + <em>σ</em>)</span>
+相互作用哈密顿量为<span
+class="math inline"><em>V</em> = −<em>d</em> ⋅ <em>E</em> = ℏ<em>Ω</em><sub><em>R</em></sub>(<em>σ</em><sup>+</sup> + <em>σ</em>)cos (<em>ω</em><em>t</em> + <em>φ</em>)</span>
+其中，<span
+class="math inline">$\Omega_{R}=-\mu\cdot  \frac{E_{0}}{\hbar}$</span>，称为Rabi频率，描述原子与光场之间的耦合强度
+系统的总哈密顿量为<span
+class="math display">$$H=H_{0}+V=\frac{1}{2}\hbar
+\omega_{0}\sigma_{z}+\hbar \Omega_{R}(\sigma^+ +\sigma)\cos(\omega
+t+\varphi)$$</span> 相互作用绘景下哈密顿量：其中<span
+class="math inline"><em>Δ</em> = <em>ω</em><sub>0</sub> − <em>ω</em></span>为失谐量
+<span class="math display">$$H_{I}=\frac{1}{2}\hbar \Omega_{R}(\sigma^+
+e^{i(\Delta t-\varphi)})+\sigma e^{-i(\Delta t-\varphi)})$$</span> ###
+2.3.2 薛定谔方程和密度矩阵方程的求解 1. 共振相互作用<span
+class="math inline">(<em>Δ</em> = 0)</span> <span
+class="math display">$$H_{I}=\frac{1}{2}\hbar \Omega_{R}(\sigma^+
+e^{-i\varphi}+\sigma e^{i\varphi})$$</span> - 概率幅法，设<span
+class="math inline">|<em>ψ</em>⟩ = <em>c</em><sub><em>e</em></sub>(<em>t</em>)|<em>e</em>⟩ + <em>c</em><sub><em>g</em></sub>(<em>t</em>)|<em>g</em>⟩</span>通过求解<span
+class="math inline"><em>c</em><sub><em>e</em></sub>(<em>t</em>), <em>c</em><sub><em>g</em></sub>(<em>t</em>)</span>来得到态矢量<span
+class="math inline">|<em>ψ</em>(<em>t</em>)⟩</span> <span
+class="math display">$$|\psi(t)\rangle=\cos\left( \frac{\Omega_{R}}{2}t
+\right)|e\rangle-ie^{i\varphi}\sin\left( {\frac{\Omega_R}{2}}
+t\right)|g\rangle$$</span> - 时间演化算符方法，设<span
+class="math inline">|<em>ψ</em>(<em>t</em>)⟩ = <em>U</em>(<em>t</em>)|<em>ψ</em><sub>0</sub>⟩</span>通过求得时间演化算符来对待态矢量，若哈密顿量不含时间，<span
+class="math inline">$U(t)=e^{-\frac{i}{\hbar}Ht}$</span> 原子以频率<span
+class="math inline"><em>Ω</em><sub><em>R</em></sub></span>在上下能态之间作简谐振荡，称作Rabi振荡
+1. 非共振相互作用（失谐相互作用<span
+class="math inline"><em>Δ</em> ≠ 0</span>） - 概率幅方法<span
+class="math display">$$c_{e}(t)=e^{i\frac{\Delta}{2}t}\left[ \cos\left(
+\frac{\Omega}{2}t \right) -i\frac{\Delta}{\Omega}\sin\left(
+\frac{\Omega}{2}t \right)\right]$$</span> <span
+class="math display">$$c_{g}(t)=-ie^{i\frac{\Delta}{2}t}\frac{\Omega_{R}}{\Omega}e^{i\varphi}\sin(\frac{\Omega}{2}t)$$</span>
+计算平均值时，应该取同一个绘景的算符和态矢量 - 密度矩阵方法 <span
+class="math display"><em>ρ</em>(<em>t</em>) = |<em>ψ</em>(<em>t</em>)⟩⟨<em>ψ</em>(<em>t</em>)|</span>
+密度算符的矩阵元：<span class="math display">$$\begin{align}
+\rho_{e e}(t)=\langle e { |\rho| e\rangle  }=P_{e}(t) \\
+\rho_{e g}(t)=\langle e { |\rho| g\rangle  }=c_{e}(t)c^*_{g}(t) \\
+\rho_{g e}(t)=\langle g { |\rho| e\rangle  }=c^*_{e}(t)c_{g}(t)  \\
+\rho_{g g}(t)=\langle g { |\rho| g\rangle  }=P_{g}(t)
+\end{align}$$</span> 对角元表示原子的布居概率
+导出密度矩阵元的时间演化方程 <span
+class="math display">$$\frac{d}{dt}\rho_{g g}(t)=-\frac{d}{dt}\rho_{e
+e}(t);\frac{d}{dt}\rho_{ge}=\frac{d}{dt}\rho^*_{eg}(t)$$</span> -
+Bloch矢量（W，U，V）及其演化方程 引入Bloch矢量 <span
+class="math display">$$\begin{align}
+W=\rho_{e e }-\rho_{gg} \\
+U=\frac{1}{2}(\rho_{e g}+\rho_{g e}) \\
+V=\frac{1}{2i}(\rho_{eg}-\rho_{ge})
+\end{align}$$</span> 即<span
+class="math inline"><em>ρ</em><sub><em>e</em><em>g</em></sub> = <em>U</em> + <em>i</em><em>V</em>, <em>ρ</em><sub><em>g</em><em>e</em></sub> = <em>U</em> − <em>i</em><em>V</em></span>
+可导出密度矩阵演化方程 ### 2.3.3 耗散的唯象描述 1.
+在概率幅方程中唯象引入耗散 <span
+class="math display">$$\frac{d}{dt}c_{k}(t)=-\frac{\gamma_{k}}{2}c_{k}(t)+非耗散项，k=e,g$$</span>
+2. 在密度矩阵方程中唯象引入耗散 <span
+class="math display">$$\begin{align}
+\frac{d}{dt}\rho_{e e}(t)=-\gamma_{e}\rho
+_{e e}(t)+非耗散项 \\
+d/dt\rho_{gg}(t) =-\gamma_{g}\rho_{gg}(t)+非耗散项 \\
+\frac{d}{dt }\rho_{e g}(t)=-\frac{\gamma_{e}+\gamma_{g}}{2}\rho_{e
+g}(t)+非耗散项 \\
+\frac{d}{dt}\rho_{g e}(t)=\frac{d}{dt}\rho^*_{e g}(t)\\
+\end{align}$$</span> ## 2.4 双模电磁场与三能级原子的相互作用 ![[Pasted
+image 20250630214433.png]] 双模电磁场与三能级原子的^型相互作用 <span
+class="math display"><em>H</em><sub>0</sub> = ∑<sub><em>k</em></sub>ℏ<em>ω</em><sub><em>k</em></sub>|<em>k</em>⟩⟨<em>k</em>| = ℏ<em>ω</em><sub><em>a</em></sub>|<em>a</em>⟩⟨<em>a</em>|+ℏ<em>ω</em><sub><em>b</em></sub>|<em>b</em>⟩⟨<em>b</em>|+ℏ<em>ω</em><sub><em>c</em></sub>|<em>c</em>⟩⟨<em>c</em>|</span>
+相互作用绘景中电偶极近似和旋波近似下的相互作用哈密顿量 <span
+class="math display">$$V_{I}=-\frac{\hbar}{2}
+[\Omega_{1}e^{-i\varphi_{1}}e^{i\Delta t}|a\rangle\langle
+b|+\Omega_{2}e^{-i\varphi_{2}}e^{i\Delta t}|a\rangle\langle
+c|+H.c.]$$</span> 其中<span
+class="math inline">$\Omega_{1}=\mu_{ab}\cdot
+\frac{E^{(0)}_{1}}{\hbar}$</span>,<span
+class="math inline">$\Omega_{2}=\mu_{ac}\cdot
+\frac{E^{(0)}_{2}}{\hbar}$</span>,<span
+class="math inline"><em>Δ</em><sub>1</sub> = <em>ω</em><sub><em>a</em><em>b</em></sub> − <em>ω</em><sub>1</sub> = <em>ω</em><sub><em>a</em></sub> − <em>ω</em><sub><em>b</em></sub> − <em>ω</em><sub>1</sub></span>,<span
+class="math inline"><em>Δ</em><sub>2</sub> = <em>ω</em><sub><em>a</em><em>c</em></sub> − <em>ω</em><sub>2</sub> = <em>ω</em><sub><em>a</em></sub> − <em>ω</em><sub><em>c</em></sub> − <em>ω</em><sub>2</sub></span>
+- 设原子初态为<span class="math inline">$|\psi(0)=\cos\left(
+\frac{\vartheta}{2} \right)|b\rangle+\sin\left( \frac{\vartheta}{2}
+\right) e^{-i\psi}|c\rangle$</span> - 当满足条件<span
+class="math inline"><em>Ω</em><sub>1</sub> = <em>Ω</em><sub>2</sub>,</span>,<span
+class="math inline">$\vartheta=\frac{\pi}{2}$</span>，<span
+class="math inline">(<em>φ</em><sub>1</sub> − <em>φ</em><sub>2</sub> − <em>ψ</em>) = ±<em>π</em></span>时，由于两个跃迁通道之间的相消干涉，初始态处在两个下能级的相干叠加态<span
+class="math inline">$|\psi(0)\rangle=\frac{1}{\sqrt{ 2
+}}|b\rangle+\frac{1}{\sqrt{ 2
+}}e^{-i\psi}|c\rangle$</span>，这种现象称为相干布局囚禁，这个状态为囚禁态
+- 将原子的布居数从初态<span
+class="math inline">|<em>b</em>⟩</span>转移到末态<span
+class="math inline">|<em>c</em>⟩</span>，而不会将原子布居到激发态<span
+class="math inline">|<em>a</em>⟩</span>上，这个过程叫做相干布居数转移，也叫做绝热布居数转移
+# 第三章 电磁场物理量的算符表示
+电磁场的量子化，即把描述电磁场的物理量（电场强度E，磁感应强度B，能量H等）用算符表示，把电磁场的状态用态矢量或密度算符表示
+麦克斯韦方程（真空中） <span class="math display">$$\begin{align}
+\nabla\times E=-\frac{\partial B}{\partial t} \\
+\nabla\times B=\frac{1}{c^2}\frac{\partial E}{\partial t} \\
+\nabla \cdot B=0 \\
+\nabla \cdot E=0
+\end{align}$$</span></p>
 
                 
               </div>
